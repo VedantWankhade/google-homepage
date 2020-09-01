@@ -1,3 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: small;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 50%;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+}
+
+.nav-list > li {
+    padding: 1em;
+}
+
+.nav-list div {
+    background-color: blue;
+    padding: 0.2em 0.7em;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 6.7%;
+}
+
+.search-bar-holder {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.search-bar {
+    display: inline-block;
+    border-radius: 5em;
+    border: 1px solid black;
+    text-align: center;
+    width: 35%;
+    padding: 0.5em;
+}
+
+input {
+    padding: 0 1em;
+    width: 90%;
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+.buttons > div {
+    margin: 0.5em;
+    padding: 0.2em 0.5em;
+}
+
+.languages {
+    margin-top: 1em;
+}
+
+.language-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.language-list > li {
+    margin: 0 0.3em;
+}
+
+footer {
+    margin-top: 12em;
+}
+
+.location {
+    padding: 0.7em;
+    border-bottom: 1.6px solid black;
+    background-color: rgb(216, 203, 203);
+}
+
+.options {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0.7em;
+    justify-content: space-between;
+    background-color: rgb(216, 203, 203);
+}
+
+.options > ul {
+    display: flex;
+    flex-flow: row wrap
+}
+
+.options > ul > li{
+    margin: 0 0.3em;
+}
+
+@media (max-width: 400px) {
+
+    .nav-list {
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .search-bar {
+        width: 95%;
+    }
+
+}
+
 /*----------border styles for debugging-------------*/
 /*
 header {
@@ -61,97 +194,3 @@ footer {
 }
 
 /*--------------------------------------------------*/
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: right;
-}
-
-.nav-list {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-}
-
-.nav-list > li {
-    padding: 1em;
-}
-
-.nav-list div {
-    background-color: blue;
-    padding: 0.2em 0.7em;
-}
-
-.logo {
-    text-align: center;
-    margin-top: 6.7%;
-}
-
-.search-bar {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-input {
-    padding: 0 1em;
-    width: 25%;
-}
-
-.buttons {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
-
-.buttons > div {
-    background-color: azure;
-    margin: 0.5em;
-    padding: 0.2em 0.5em;
-}
-
-.language-list {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
-
-.language-list > li {
-    margin: 0 0.3em;
-}
-
-footer {
-    background-color: rgb(216, 203, 203);
-    margin-top: 11.5em;
-}
-
-.options {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-
-.options > ul {
-    display: flex;
-    flex-flow: row nowrap
-}
-
-.options > ul > li{
-    margin: 0 0.3em;
-}
