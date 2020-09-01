@@ -1,0 +1,157 @@
+/*----------border styles for debugging-------------*/
+/*
+header {
+    border: 1px solid red;
+}
+
+.nav-list {
+    border: 2px solid green;
+}
+
+.nav-list > li {
+    border: 1px dashed red;
+}
+
+main {
+    border: 2px solid blue;
+}
+
+.logo {
+    border: 1px solid green;
+}
+
+.search-bar {
+    border: 1px solid red;
+}
+
+.buttons {
+    border: 2px solid blue;
+}
+
+.google-search {
+    border: 1px dashed red;
+}
+
+.feeling-lucky {
+    border: 1px dashed green;
+}
+
+.languages {
+    border: 2px solid red;
+}
+
+.language-list {
+    border: 2px dashed green;
+}
+
+.language-list > li {
+    border: 1px solid blue;
+}
+
+footer {
+    border: 2px solid red;
+}
+
+.location {
+    border: 1px solid green;
+}
+
+.options {
+    border: 1px solid blue;
+}
+
+/*--------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+}
+
+.nav-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.nav-list > li {
+    padding: 1em;
+}
+
+.nav-list div {
+    background-color: blue;
+    padding: 0.2em 0.7em;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 6.7%;
+}
+
+.search-bar {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input {
+    padding: 0 1em;
+    width: 25%;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.buttons > div {
+    background-color: azure;
+    margin: 0.5em;
+    padding: 0.2em 0.5em;
+}
+
+.language-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.language-list > li {
+    margin: 0 0.3em;
+}
+
+footer {
+    background-color: rgb(216, 203, 203);
+    margin-top: 11.5em;
+}
+
+.options {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.options > ul {
+    display: flex;
+    flex-flow: row nowrap
+}
+
+.options > ul > li{
+    margin: 0 0.3em;
+}
